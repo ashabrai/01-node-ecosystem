@@ -1,43 +1,41 @@
-![CF](http://i.imgur.com/7v5ASc8.png) 01: Node Ecosystem
-===
+#Node Ecosystem
+- This assignment to create a simple test to see if my code works.
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+##Getting Started
+- Fork repo 
+- Clone repo into local device 
+- Create a test folder
+- Create a lib folder 
+- In test folder, that's where you will have your test function for your .js file.
+- In lib folder that's where you will have you .js file for the code itself. 
 
-## Configuration
-Configure the root of your repository with the following files and directories. Thoughtfully name and organize any additional configuration or module files.
+## Things you need to install
+-npm init -y will create an package.json file 
+-npm I -D jest you need to run this application 
+ 
+## When you are ready to run test
+-npm run test
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
-* **.eslintrc.json** - contains the course linter configuration
-* **.eslintignore** - contains the course linter ignore configuration
-* **.travis.yml** - contains your travis testing instructions
-* **package.json** - contains npm package config 
-  * jest and eslint must be dependencies
-  * create a `lint` script for running eslint `"lint": "eslint **/.js"`
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
 
-## Testing
+##What to expect
+-In the .js file, you'll see two functions. 
+First function will be an addition. The second function you'll see will be a subtract. 
+-For each function you will see a if statement that requires to return 
+a error if what was given was not NaN.
+-And if what was given was numbers, it'll continue with adding or subtracting. 
+-In the .test.js file, you will two common test functions.
+    *test : Which is a description of what its doing.
+    *expect : Is return what it should be.
+    
+-*const: This will be what the function that your trying to test is actually doing.
 
-### Arithmetic Module Tests
-* Test each method for proper use (invoked with number arguments)
-* Test each method for inproper use (invoked with one or more non-number arguments)
 
-## Feature Tasks
+##Authors
+-Brai Frauen
 
-### Arithmetic Module
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have `add` and `sub` methods that implement addition and subtraction.
-* The `add` method should have a 2 parameters (arity of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (arity of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the second parameter subtracted from the first parameter
+##License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-### Documentation
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+##Acknowledgments
+-Vinicio Sanchez
+-Katy Robinson
