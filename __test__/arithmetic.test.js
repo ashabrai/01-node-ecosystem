@@ -5,7 +5,7 @@ const arithmetic = require('../lib/arithmetic');
 
 describe('#arithmetic.test.js', () => {
   test('How to add things together', () => {
-    const addNum = arithmetic.addNumbers(3, 5);
+    const addNum = arithmetic.addNumbers(A , 5);
     expect(addNum).toEqual(8);
   });
 });
